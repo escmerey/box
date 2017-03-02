@@ -285,6 +285,7 @@ p{
 	display: inline-block;
 	z-index: 0;
 	border: none;
+	text-align: center;
 	&_small{
 		color: #ffffff;
 		font-size: 1em;
@@ -764,10 +765,13 @@ hr{
 		background-color: #fff;
 		padding: 5px 0;
 		visibility: hidden;
+		opacity: 0;
 		pointer-events: none;
+		transition: 0.5s all;
 		&._active{
 			visibility: visible;
 			pointer-events: all;
+			opacity: 1;
 			.header__menu_row{
 				opacity: 1;
 			}
@@ -991,11 +995,12 @@ hr{
 	margin-bottom: 80px;
 	position: relative;
 	&__body{
-		@extend ._flex_sb_fe;
+		@extend ._flex_sb_c;
 	}
 	&__txt{
 		max-width: 774px;
 		margin-right: -30px;
+		padding-bottom: 120px;
 		margin-bottom: auto;
 		margin-top: auto;
 		h1{
@@ -1010,6 +1015,8 @@ hr{
 	&__img{
 		margin-right: -288px;
 		width: 600px;
+		transition: opacity $t*4;
+		opacity: 0;
 		img{
 			max-width: 100%;
 		}
@@ -1029,7 +1036,7 @@ hr{
 			background-size: cover;
 			@extend ._flex_c_c;
 			flex-direction: column;
-			transition: $t;
+			transition: $t/1.5;
 			z-index: 0;
 			position: relative;
 			&:before{
@@ -1069,6 +1076,18 @@ hr{
 			}
 			progress[value]{
 				width: 100%;
+			}
+		}
+	}
+	&__slider{
+		&_item{
+			&.active{
+				.s_main{
+					&__img{
+						transform: none;
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}
@@ -1190,9 +1209,6 @@ hr{
 				}
 				&_img{
 					background-color: $o;
-					&:hover{
-						background-color: $b;
-					}
 				}
 			}
 		}

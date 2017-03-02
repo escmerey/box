@@ -1,4 +1,31 @@
 $(document).ready(function(){
+	//s_main slider
+	if($('*').is('.s_main__slider')){
+		var sl_main = $('.s_main__slider').lightSlider({
+			item: 1,
+			speed: 1500,
+			controls: false,
+			pager: false,
+		})
+		$('.s_main__menu_item').click(function(e){
+			e.preventDefault();
+			var el = $(this),
+				n = el.index();
+			el.siblings('._current').find('progress').animate({
+				value: 0
+			},400);
+			el.addClass('_current')
+				.siblings().removeClass('_current');
+			el.find('progress').animate({
+				value: 100
+			},1000);
+			setTimeout(function(){
+				sl_main.goToSlide(n);
+			},1000);
+		});
+	}
+	
+	
 	$('.header__top_call').click(function(){
 		$('form').each(function() {
             $(this)[0].reset();
