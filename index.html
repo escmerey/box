@@ -1,0 +1,377 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Главная</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+
+        <script src="vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a></p>
+        <![endif]-->
+        <header class="header">
+        	<div class="header__top">
+        		<div class="container">
+        			<div class="header__top_wrap">
+        				<a href="https://www.google.com.ua/maps?source=tldso" target="_blank" class="header__top_link"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="18"><path d="M7 0C3.1 0 0 3.1 0 7 0 8 0.2 9 0.6 9.8 2.4 13.7 5.7 16.7 6.7 17.9 6.8 17.9 6.9 18 7 18 7.1 18 7.2 17.9 7.3 17.9 8.3 16.7 11.6 13.7 13.4 9.8 13.8 9 14 8 14 7 14 3.1 10.9 0 7 0ZM7 10.6C5 10.6 3.4 9 3.4 7 3.4 5 5 3.4 7 3.4 9 3.4 10.6 5 10.6 7 10.6 9 9 10.6 7 10.6Z" fill="rgb(227, 203, 178)"/></svg><span>г. Клин, улица Захватаева, 4</span></a>
+        				<a href="mailto:dobox@info.com" class="header__top_link"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path d="M18 11.7C18 12.1 17.9 12.5 17.7 12.8L12 6.2 17.6 1.1C17.9 1.5 18 1.9 18 2.3L18 11.7ZM9 7.4L16.8 0.3C16.5 0.1 16.1 0 15.8 0L2.3 0C1.9 0 1.5 0.1 1.2 0.3L9 7.4ZM11.2 7L9.4 8.6C9.3 8.7 9.1 8.8 9 8.8 8.9 8.8 8.7 8.7 8.6 8.6L6.8 7 1.1 13.6C1.4 13.9 1.8 14 2.3 14L15.8 14C16.2 14 16.6 13.9 16.9 13.6L11.2 7ZM0.4 1.1C0.1 1.5 0 1.9 0 2.3L0 11.7C0 12.1 0.1 12.5 0.3 12.8L6 6.2 0.4 1.1Z" fill="rgb(227, 203, 178)"/></svg><span>dobox@info.com</span></a>
+						<a href="tel:88005553535" class="header__top_phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M16 12.6C16 12.9 15.9 13.1 15.8 13.3L13.5 15.5C13.4 15.7 13.3 15.8 13.1 15.8 12.9 15.9 12.8 16 12.6 16 12.6 16 12.6 16 12.5 16 12.5 16 12.4 16 12.3 16 12.1 16 11.7 16 11.3 15.9 10.8 15.8 10.2 15.6 9.5 15.3 8.8 15.1 8 14.6 7.1 14.1 6.3 13.5 5.3 12.7 4.3 11.7 3.5 10.9 2.9 10.2 2.4 9.4 1.8 8.7 1.4 8.1 1.1 7.5 0.8 6.9 0.6 6.3 0.4 5.8 0.2 5.3 0.1 4.9 0.1 4.5 0 4.2 0 3.9 0 3.7 0 3.5 0 3.4 0 3.4 0 3.2 0.1 3.1 0.2 2.9 0.3 2.7 0.3 2.6 0.5 2.5L2.7 0.2C2.9 0.1 3.1 0 3.3 0 3.4 0 3.5 0 3.6 0.1 3.8 0.2 3.9 0.3 3.9 0.4L5.7 3.9C5.8 4.1 5.9 4.3 5.8 4.5 5.8 4.7 5.7 4.9 5.5 5L4.7 5.8C4.7 5.9 4.7 5.9 4.7 6 4.6 6 4.6 6.1 4.6 6.1 4.7 6.3 4.8 6.6 4.9 6.9 5.1 7.2 5.3 7.5 5.6 7.9 5.8 8.3 6.2 8.7 6.8 9.2 7.3 9.8 7.7 10.2 8.1 10.4 8.5 10.7 8.8 10.9 9.1 11.1 9.4 11.2 9.6 11.3 9.7 11.3L9.9 11.4C10 11.4 10 11.4 10 11.3 10.1 11.3 10.1 11.3 10.1 11.3L11.1 10.3C11.3 10.1 11.6 10 11.8 10 12 10 12.2 10.1 12.3 10.1L12.3 10.1 15.6 12.1C15.8 12.2 15.9 12.4 16 12.6Z" fill="rgb(227, 203, 178)"/></svg><span>8 800 555 35 35</span></a>
+						<div class="header__top_call">Заказать звонок</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="header__bot">
+        		<div class="container">
+        			<div class="header__bot_wrap">
+        				<a href="/" class="header__bot_logo"><img src="images/logo.png" alt=""></a>
+        				<a href="#" class="header__bot_btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17"><path d="M19.9 9L1.1 9C0.5 9 0 9.6 0 9 0 8.4 0.5 7.9 1.1 7.9L19.9 7.9C20.5 7.9 21 8.4 21 9 21 9.6 20.5 9 19.9 9ZM19.9 2.1L1.1 2.1C0.5 2.1 0 1.6 0 1.1 0 0.5 0.5 1 1.1 1L19.9 1C20.5 1 21 0.5 21 1.1 21 1.6 20.5 2.1 19.9 2.1ZM1.1 14.9L19.9 14.9C20.5 14.9 21 15.4 21 15.9 21 16.5 20.5 16 19.9 16L1.1 16C0.5 16 0 16.5 0 15.9 0 15.4 0.5 14.9 1.1 14.9Z" fill="rgb(8, 17, 44)"/></svg><span>НАША ПРОДУКЦИЯ</span><span class="header__bot_btnactive"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M16 0.9L8.9 8 16 15.1 15.1 16 8 8.9 0.9 16 0 15.1 7.1 8 0 0.9 0.9 0 8 7.1 15.1 0 16 0.9Z" fill="rgb(255, 255, 255)"/></svg></span></a>
+        				<a href="#" class="header__bot_btnmenu"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17"><path d="M19.9 9L1.1 9C0.5 9 0 9.6 0 9 0 8.4 0.5 7.9 1.1 7.9L19.9 7.9C20.5 7.9 21 8.4 21 9 21 9.6 20.5 9 19.9 9ZM19.9 2.1L1.1 2.1C0.5 2.1 0 1.6 0 1.1 0 0.5 0.5 1 1.1 1L19.9 1C20.5 1 21 0.5 21 1.1 21 1.6 20.5 2.1 19.9 2.1ZM1.1 14.9L19.9 14.9C20.5 14.9 21 15.4 21 15.9 21 16.5 20.5 16 19.9 16L1.1 16C0.5 16 0 16.5 0 15.9 0 15.4 0.5 14.9 1.1 14.9Z" fill="rgb(8, 17, 44)"/></svg><span>Меню</span><span class="header__bot_btnmenuactive"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M16 0.9L8.9 8 16 15.1 15.1 16 8 8.9 0.9 16 0 15.1 7.1 8 0 0.9 0.9 0 8 7.1 15.1 0 16 0.9Z" fill="rgb(255, 255, 255)"/></svg></span></a>
+						<nav>
+							<a href="#">О компании</a>
+							<a href="#">Услуги</a>
+							<a href="#">Портфолио</a>
+							<a href="#">Контакты</a>
+						</nav>
+        			</div>
+        		</div>
+        		<form class="header__pop" action="/">
+					<div class="container">
+						<div class="header__pop_wrap">
+							<div class="header__pop_close">&times;</div>
+							<input type="text" class="input" name="name" placeholder="Ваше имя">
+							<input type="text" class="input" name="phone" placeholder="Номер телефона">
+							<button class="btn_small" type="submit"><span>заказать звонок</span></button>
+						</div>
+					</div>
+				</form>
+				<div class="header__menu">
+					<div class="container">
+						<div class="header__menu_row">
+							<div class="header__menu_col">
+								<i><img src="images/ico/category/3.png" alt=""></i>
+								<h4><a href="#">Микрогофрокартон и гофрокоробка</a></h4>
+								<div class="header__menu_links">
+									<div>
+										<a href="#"><span>Автозапчасти</span></a>
+										<a href="#"><span>Бутылки</span></a>
+										<a href="#"><span>Телефоны</span></a>
+									</div>
+									<div>
+										<a href="#"><span>Кружки</span></a>
+										<a href="#"><span>Подарки</span></a>
+										<a href="#"><span>Портфели с ручками</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__menu_col">
+								<i><img src="images/ico/category/1.png" alt=""></i>
+								<h4><a href="#">Коробки из картона</a></h4>
+								<div class="header__menu_links">
+									<div>
+										<a href="#"><span>Лекарства</span></a>
+										<a href="#"><span>Зубная паста</span></a>
+									</div>
+									<div>
+										<a href="#"><span>Косметика</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__menu_col">
+								<i><img src="images/ico/category/7.png" alt=""></i>
+								<h4><a href="#">POSM материалы</a></h4>
+								<div class="header__menu_links">
+									<div>
+										<a href="#"><span>Автозапчасти</span></a>
+										<a href="#"><span>Бутылки</span></a>
+										<a href="#"><span>Телефоны</span></a>
+									</div>
+									<div>
+										<a href="#"><span>Кружки</span></a>
+										<a href="#"><span>Подарки</span></a>
+										<a href="#"><span>Портфели с ручками</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="header__menu_row">
+							<div class="header__menu_col">
+								<i><img src="images/ico/category/5.png" alt=""></i>
+								<h4><a href="#">ПАПКИ</a></h4>
+								<div class="header__menu_links">
+									<div>
+										<a href="#"><span>Папки меню</span></a>
+										<a href="#"><span>С кольцевым механизмом</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__menu_col">
+								<i><img src="images/ico/category/6.png" alt=""></i>
+								<h4><a href="#">бумажные пакеты</a></h4>
+								<div class="header__menu_links">
+									<div>
+										<a href="#"><span>Вертикальные</span></a>
+										<a href="#"><span>Горизонтальные</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="header__menu_col">
+								<i><img src="images/ico/category/2.png" alt=""></i>
+								<h4><a href="#">Коробки “крышка - Дно”</a></h4>
+								<i><img src="images/ico/category/4.png" alt=""></i>
+								<h4><a href="#">Переплетный картон</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</div>
+        </header>
+		<section class="s_main">
+			<div class="container">
+				<div class="s_main__body">
+					<div class="s_main__txt">
+						<h1>Изделия из гофрокороба и <small class="h1small_fix">микрогофрокартона</small></h1>
+						<p>По лучшей цене в Москве и МО от производителя</p>
+						<a href="#" class="btn _open_pop" data-name="calc"><span>Запросить стоимость</span></a>
+					</div>
+					<div class="s_main__img"><img src="images/bg/1.png" alt=""></div>
+				</div>
+			</div>
+			<div class="s_main__menu">
+				<div class="container">
+					<div class="s_main__menu_wrap">
+						<a href="#" class="s_main__menu_item _current" style="background-image: url('images/menu/1.jpg')">
+							<progress max="100" value="100"></progress>
+							<h3>Микрогофрокартон и гофрокоробка</h3>
+						</a>
+						<a href="#" class="s_main__menu_item" style="background-image: url('images/menu/2.jpg')">
+							<progress max="100" value="64"></progress>
+							<h3>Коробки из картона</h3>
+						</a>
+						<a href="#" class="s_main__menu_item" style="background-image: url('images/menu/3.jpg')">
+							<progress max="100" value="0"></progress>
+							<h3>Упаковочные коробки</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="s_catalog">
+        	<div class="container">
+        		<div class="s_catalog__body">
+        			<aside class="s_catalog__left">
+        				<div class="s_catalog__left_btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17"><path d="M19.9 9L1.1 9C0.5 9 0 9.6 0 9 0 8.4 0.5 7.9 1.1 7.9L19.9 7.9C20.5 7.9 21 8.4 21 9 21 9.6 20.5 9 19.9 9ZM19.9 2.1L1.1 2.1C0.5 2.1 0 1.6 0 1.1 0 0.5 0.5 1 1.1 1L19.9 1C20.5 1 21 0.5 21 1.1 21 1.6 20.5 2.1 19.9 2.1ZM1.1 14.9L19.9 14.9C20.5 14.9 21 15.4 21 15.9 21 16.5 20.5 16 19.9 16L1.1 16C0.5 16 0 16.5 0 15.9 0 15.4 0.5 14.9 1.1 14.9Z" fill="#fff"/></svg><span>НАША ПРОДУКЦИЯ</span></div>
+        				<a href="#"><small><img src="images/ico/category/1.png" alt=""></small><span>Коробки из картона</span></a>
+        				<hr>
+        				<a href="#"><small><img src="images/ico/category/2.png" alt=""></small><span>Коробки "крышка-дно"</span></a>
+        				<hr>
+						<a href="#"><small><img src="images/ico/category/3.png" alt=""></small><span>Микрогофрокартон и гофрокоробка</span></a>
+        				<hr>
+        				<a href="#"><small><img src="images/ico/category/4.png" alt=""></small><span>Переплетный картон</span></a>
+        				<hr>
+        				<a href="#"><small><img src="images/ico/category/5.png" alt=""></small><span>Папки меню</span></a>
+						<hr>
+        				<a href="#"><small><img src="images/ico/category/6.png" alt=""></small><span>Бумажные пакеты</span></a>
+        				<hr>
+						<a href="#"><small><img src="images/ico/category/7.png" alt=""></small><span>POSM материалы</span></a>
+						<hr>
+        			</aside>
+        			<div class="s_catalog__right">
+        				<div class="s_catalog__item">
+        					<a href="#" class="s_catalog__item_img"><img src="images/items/1.png" alt=""></a>
+							<div class="s_catalog__item_txt">
+								<p>Фирменная коробка с фальшбортом</p>
+								<a href="#" class="s_catalog__item_link"><span>УЗНАТЬ ПОДРОБНЕЕ</span></a>
+							</div>
+        				</div>
+        				<div class="s_catalog__item">
+        					<a href="#" class="s_catalog__item_img"><img src="images/items/2.png" alt=""></a>
+							<div class="s_catalog__item_txt">
+								<p>Кашированная коробка - шкатулка для пластик...</p>
+								<a href="#" class="s_catalog__item_link"><span>УЗНАТЬ ПОДРОБНЕЕ</span></a>
+							</div>
+        				</div>
+        				<div class="s_catalog__item">
+        					<a href="#" class="s_catalog__item_img"><img src="images/items/3.png" alt=""></a>
+							<div class="s_catalog__item_txt">
+								<p>Кашированная коробка крышка - дно из метал...</p>
+								<a href="#" class="s_catalog__item_link"><span>УЗНАТЬ ПОДРОБНЕЕ</span></a>
+							</div>
+        				</div>
+        				<div class="s_catalog__item">
+        					<a href="#" class="s_catalog__item_img"><img src="images/items/4.png" alt=""></a>
+							<div class="s_catalog__item_txt">
+								<p>Фирменная папка для образцов продукции</p>
+								<a href="#" class="s_catalog__item_link"><span>УЗНАТЬ ПОДРОБНЕЕ</span></a>
+							</div>
+        				</div>
+        				<div class="s_catalog__item">
+        					<a href="#" class="s_catalog__item_img"><img src="images/items/5.png" alt=""></a>
+							<div class="s_catalog__item_txt">
+								<p>Кашированный пеналс фигурным скосом...</p>
+								<a href="#" class="s_catalog__item_link"><span>УЗНАТЬ ПОДРОБНЕЕ</span></a>
+							</div>
+        				</div>
+        				<div class="s_catalog__item">
+        					<a href="#" class="s_catalog__item_img"><img src="images/items/6.png" alt=""></a>
+							<div class="s_catalog__item_txt">
+								<p>Подарочная коробка-книжка на лентах</p>
+								<a href="#" class="s_catalog__item_link"><span>УЗНАТЬ ПОДРОБНЕЕ</span></a>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <section class="s_about">
+        	<div class="container">
+        		<div class="s_about__body">
+        			<div class="s_about__left">
+        				<h2 class="h1">О компании</h2>
+						<p>Наши специалисты уже более 10 лет успешно занимаются изготовлением и продажей гофрокартона, гофротары, различных картонных коробок и картонных упаковок различной конфигурации, которые используются самыми разными компаниями для упаковки и бережной перевозки своих товаров.</p>
+						<p><b>Цель нашей компании</b> – сделать всё от нас зависящее, чтобы удовлетворить потребности наших клиентов в надёжной и качественной продукции из гофрокартона. Мы хотим, чтобы наши клиенты были довольны качеством нашей продукции, и продолжали сотрудничать с нами на протяжении всей своей профессиональной деятельности, создавая с нашей помощью имидж успешно развивающейся компании.</p>
+        			</div>
+        			<div class="s_about__right">
+        				<div class="s_about__right_item">
+        					<i><svg xmlns="http://www.w3.org/2000/svg" width="128" height="104"><path d="M128 47.4L115.2 19.8 66.6 0 13.8 20 0 40.1 13.6 38.9 13.6 83.8 64.7 104 115.3 83.8 115.3 52.9 128 47.4ZM66.6 39.2L66.6 3.9 110.6 21.8 66.6 39.2ZM62.6 99.2L17.3 81.3 17.3 25.3 62.6 43.2 62.6 99.2ZM111.7 81.3L66.3 99.2 66.3 43.2 76.2 69.6 111.7 54.4 111.7 81.3 111.7 81.3Z" fill="rgb(255, 255, 255)"/></svg></i>
+        					<span>3 897</span>
+							<h4>Разработанных конструкций</h4>
+        				</div>
+        				<div class="s_about__right_item">
+        					<i><svg xmlns="http://www.w3.org/2000/svg" width="108" height="102"><path d="M98.6 52.2L53.6 102 8.4 52.1C-2.8 39.8-2.8 20.8 8.4 8.9 13.7 3.2 21.2 0.1 29.4 0.1 37.1 0.1 44.2 2.8 49.4 7.8L53.5 11.8 57.6 7.9C63.3 2.7 70.2 0 77.7 0 85.6 0 93 3.1 98.5 8.7 109.8 20.8 109.8 39.9 98.6 52.2ZM93.6 13.3C89.5 9.1 83.8 6.7 77.7 6.7 71.9 6.7 66.5 8.8 62.2 12.9L53.4 21 44.7 12.7C40.8 8.9 35.4 6.8 29.4 6.8 23 6.8 17.3 9.2 13.3 13.4 4.5 22.9 4.5 37.9 13.3 47.6L53.6 92 93.6 47.7C102.6 37.9 102.5 22.8 93.6 13.3ZM39.1 56.9C39.1 49.1 47.6 49 47.6 49L59.4 49C59.4 49 67.9 49.2 67.9 56.9 67.9 63.7 67.9 64.3 67.9 64.3L39.1 64.3C39.1 64.3 39.1 63.7 39.1 56.9ZM53.5 45.8C48.9 45.8 45.1 42.1 45.1 37.5 45.1 32.9 48.9 29.1 53.5 29.1 58.1 29.1 61.9 32.9 61.9 37.5 61.9 42.1 58.1 45.8 53.5 45.8Z" fill="rgb(255, 255, 255)"/></svg></i>
+        					<span>2 000</span>
+							<h4>Довольных клиентов</h4>
+        				</div>
+        				<div class="s_about__right_item">
+        					<i><svg xmlns="http://www.w3.org/2000/svg" width="93" height="94"><path d="M78.7 86.8L7.1 86.8 7.1 14.5 59.9 14.5 64.4 7.2 7.1 7.2C3.2 7.2 0 10.5 0 14.5L0 86.8C0 90.8 3.2 94 7.1 94L78.7 94C82.6 94 85.8 90.8 85.8 86.8L85.8 39 78.7 50.6 78.7 86.8ZM90.7 0.8C89.9 0.3 88.9 0 88 0 86.3 0 84.7 0.8 83.8 2.3L44.9 59 29.9 41.6C27.8 39.7 24.7 39.9 22.8 41.9 20.9 44 21 47.2 23.1 49.1L41.1 69.9 41.6 70.4 42 71 42.2 71.1 42.6 71.5 43.6 71.9 43.8 72 45.3 72.3 45.4 72.3C46.8 72.3 48.1 71.8 49.1 70.7L49.5 70 49.5 70 92.2 7.8C93.7 5.5 93 2.4 90.7 0.8Z" fill="rgb(255, 255, 255)"/></svg></i>
+        					<span>3 995</span>
+							<h4>Выполненных заказов</h4>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="s_about__bg_arr"><svg xmlns="http://www.w3.org/2000/svg" width="447" height="726" viewBox="0 0 447 726"><path d="M362.4 0L447 84.7 169.1 363 447 641.3 362.4 726 0 363 362.4 0Z" fill="rgb(255, 239, 223)"/></svg></div>
+        </section>
+        <section class="s_why">
+        	<div class="container">
+        		<h2 class="h1">Наши преимущества</h2>
+				<div class="s_why__blocks">
+					<div class="s_why__blocks_item">
+						<i><svg xmlns="http://www.w3.org/2000/svg" width="90" height="120"><path d="M58.4 40.3L49.9 39.7 46.7 32.1C46.1 30.6 44 30.6 43.4 32.1L40.2 39.7 31.7 40.3C30.1 40.5 29.4 42.4 30.6 43.4L37.1 48.8 35.1 56.8C34.7 58.4 36.4 59.6 37.8 58.7L45 54.4 52.2 58.7C53.6 59.6 55.3 58.4 54.9 56.8L52.9 48.8 59.4 43.4C60.6 42.4 60 40.5 58.4 40.3Z" fill="rgb(255, 156, 0)"/><path d="M83.8 44.4C83.4 44.9 83.4 45.6 83.8 46.1L89.7 54.2C90.2 54.9 90 55.9 89.2 56.3L80.5 61.1C79.9 61.4 79.6 62.1 79.7 62.7L81.5 72.5C81.7 73.3 81 74.2 80.1 74.2L70.1 74.8C69.5 74.8 68.9 75.3 68.7 75.9L66.1 85.5C65.8 86.3 64.9 86.8 64.1 86.4L54.8 82.7C54.2 82.4 53.5 82.6 53.1 83.1L46.5 90.5C45.9 91.2 44.8 91.2 44.2 90.6L37.5 83.2C37.1 82.7 36.4 82.6 35.8 82.8L26.6 86.7C25.7 87.1 24.8 86.6 24.5 85.8L21.7 76.2C21.6 75.6 21 75.2 20.3 75.2L10.3 74.7C9.4 74.7 8.8 73.9 8.9 73L10.6 63.2C10.7 62.6 10.4 61.9 9.8 61.6L0.9 57C0.2 56.5-0.1 55.5 0.4 54.8L6.2 46.7C6.6 46.2 6.6 45.5 6.2 44.9L0.3 36.9C-0.2 36.2 0 35.2 0.8 34.7L9.5 29.9C10.1 29.6 10.4 29 10.3 28.4L8.5 18.6C8.3 17.7 9 16.9 9.9 16.8L19.9 16.3C20.5 16.2 21.1 15.8 21.3 15.2L23.9 5.6C24.2 4.7 25.1 4.3 25.9 4.6L35.2 8.4C35.8 8.6 36.5 8.5 36.9 8L43.5 0.5C44.1-0.2 45.2-0.2 45.8 0.5L52.5 7.9C52.9 8.3 53.6 8.5 54.2 8.2L63.4 4.3C64.3 4 65.2 4.4 65.5 5.3L68.3 14.8C68.4 15.5 69 15.9 69.6 15.9L79.6 16.3C80.6 16.4 81.2 17.2 81.1 18.1L79.4 27.9C79.3 28.5 79.6 29.1 80.2 29.4L89 34.1C89.8 34.5 90.1 35.6 89.6 36.3L83.8 44.4ZM45 18.6C30 18.6 17.8 30.7 17.8 45.6 17.8 60.4 30 72.5 45 72.5 60 72.5 72.2 60.4 72.2 45.6 72.2 30.7 60 18.6 45 18.6ZM20.5 89.9C22 91.4 24 92.2 26.1 92.2 26.9 92.2 27.7 92.1 28.4 91.9L34.8 90 39.7 94.5C39.9 94.6 40 94.8 40.2 94.9L32.3 119.2C32 120.1 30.9 120.3 30.3 119.6L24.6 112.2C24.3 111.9 23.8 111.7 23.4 111.8L14.4 114.4C13.5 114.7 12.7 113.9 13 113L20.5 89.9ZM55.3 90L61.7 91.9C62.4 92.1 63.1 92.2 63.9 92.2 66.1 92.2 68.1 91.4 69.5 89.9L77.1 113C77.3 113.8 76.5 114.7 75.7 114.4L66.7 111.8C66.3 111.7 65.8 111.8 65.5 112.2L59.7 119.5C59.2 120.3 58 120.1 57.8 119.2L49.8 94.9C50 94.7 50.2 94.6 50.3 94.4L55.3 90Z" fill="rgb(255, 239, 223)"/></svg></i>
+						<h4>Высокое качество продукции</h4>
+					</div>
+					<div class="s_why__blocks_item">
+						<i><img src="images/ico/num_box.png" alt=""></i>
+						<h4>Принимаем заказы от 1 штуки</h4>
+					</div>
+					<div class="s_why__blocks_item">
+						<i><svg xmlns="http://www.w3.org/2000/svg" width="125" height="117"><style>.a{fill:rgb(255, 239, 223);}</style><path d="M77.6 70.4L72.3 70.3C71.5 66.1 69.9 61.9 67.3 58.1L71 54.4C72.4 53.1 72.4 50.9 71.1 49.6L67.3 45.8C66 44.5 63.8 44.5 62.5 45.8L58.8 49.5C55 46.9 50.9 45.2 46.6 44.4L46.7 39.2C46.7 37.3 45.2 35.7 43.3 35.7L38 35.7C36.1 35.7 34.6 37.2 34.6 39.1L34.5 44.3C30.2 45.1 26.1 46.8 22.3 49.3L18.7 45.7C17.3 44.4 15.2 44.3 13.8 45.7L10.1 49.4C8.8 50.8 8.8 53 10.1 54.3L13.7 57.9C11.1 61.7 9.4 65.9 8.5 70.2L3.5 70.2C1.6 70.2 0 71.7 0 73.6L0 78.9C0 80.8 1.5 82.3 3.4 82.3L8.4 82.3C9.2 86.7 10.9 90.9 13.5 94.7L9.9 98.2C8.6 99.6 8.6 101.7 9.9 103.1L13.6 106.8C15 108.2 17.1 108.2 18.5 106.8L22.1 103.3C25.8 105.9 30 107.7 34.4 108.5L34.3 113.5C34.3 115.4 35.8 117 37.7 117L43 117C44.9 117 46.4 115.5 46.4 113.6L46.5 108.5C50.8 107.7 55 106 58.7 103.4L62.3 107C63.6 108.3 65.8 108.4 67.1 107L70.9 103.3C72.2 102 72.2 99.8 70.9 98.4L67.3 94.8C69.8 91 71.5 86.9 72.3 82.5L77.5 82.6C79.4 82.6 80.9 81 80.9 79.1L81 73.9C81 71.9 79.5 70.4 77.6 70.4ZM52.9 88.9C46 95.8 34.9 95.7 28 88.8 21.2 81.9 21.2 70.7 28.1 63.8 35 56.9 46.2 56.9 53 63.9 59.9 70.8 59.8 82 52.9 88.9Z" class="a"/><path d="M89.3 80.9C89.4 79.4 89.5 77.9 89.5 76.3 89.5 74.3 89.4 72.3 89.2 70.4 103.5 68.1 114.6 55.6 114.6 40.6 114.6 24 101.1 10.5 84.5 10.5 71.8 10.5 60.8 18.5 56.5 29.8 53.2 28.7 49.7 27.9 46.2 27.5 51.7 11.5 66.8 0 84.5 0 106.8 0 125 18.2 125 40.6 125 61.4 109.4 78.5 89.3 80.9ZM80.7 19.5C80.8 19.4 80.8 19.4 80.8 19.3L80.8 19.3C81 17.5 82.4 16.2 84.2 16.2 86.1 16.2 87.5 17.6 87.7 19.4L88.9 38.7C89 39.3 89.2 39.8 89.6 40.3L98.2 50.5C98.2 50.6 98.2 50.6 98.3 50.7L98.3 50.7C99.4 52.1 99.3 54 98 55.3 96.7 56.6 94.7 56.7 93.3 55.5L81.4 45.5C81.2 45.3 81 45.1 80.8 44.9 79.8 44 79.3 42.7 79.3 41.4 79.3 41.4 79.3 41.3 79.3 41.3 79.3 41.3 79.3 41.2 79.3 41.2L79.3 41.2C79.3 41 79.3 40.9 79.4 40.8L80.7 19.5Z" class="a"/><path d="M93.3 55.5C94.7 56.7 96.7 56.6 98 55.3 99.3 54 99.4 52.1 98.3 50.7L98.3 50.7 98.3 50.7C98.2 50.6 98.2 50.6 97.8 50.5L89.6 40.3C89.2 39.8 89 39.3 88.9 38.7L87.7 19.4 87.7 19.4C87.5 17.6 86.1 16.2 84.2 16.2 82.4 16.2 81 17.5 80.8 19.3L80.8 19.3 80.8 19.3C80.8 19.4 80.8 19.4 80.7 19.5L79.4 40.8C79.3 40.9 79.3 41 79.3 41.2L79.3 41.2 79.3 41.2C79.3 41.2 79.3 41.3 79.3 41.3 79.3 41.3 79.3 41.4 79.3 41.4 79.3 42.7 79.8 44 80.8 44.9 81 45.1 81.2 45.3 81.4 45.5L93.3 55.5 93.3 55.5Z" fill="rgb(255, 156, 0)"/></svg></i>
+						<h4>изготовление точно в срок</h4>
+					</div>
+					<div class="s_why__blocks_item">
+						<i><svg xmlns="http://www.w3.org/2000/svg" width="110" height="107"><style>.a{fill:rgb(255, 239, 223);}</style><path d="M72.4 78.6L58.4 64.6C57.5 63.7 56.3 63.2 55 63.2L48 63.2 48 60.5C48 58.5 46.4 56.9 44.4 56.9L3.6 56.9C1.6 56.9 0 58.5 0 60.5L0 84.6 73.8 84.6 73.8 82C73.8 80.7 73.3 79.5 72.4 78.6ZM66.3 79L52.7 79C52.4 79 52.2 78.8 52.2 78.5L52.2 67.9C52.2 67.6 52.4 67.4 52.7 67.4L55.3 67.4C55.4 67.4 55.6 67.4 55.7 67.5L66.7 78.1C67 78.4 66.8 79 66.3 79ZM73.8 86.6L73.8 94.5C73.8 96.5 72.2 98.1 70.2 98.1L66.4 98.1C65.7 93.4 61.7 89.7 56.7 89.7 51.8 89.7 47.7 93.4 47.1 98.1L27.7 98.1C27 93.4 22.9 89.7 18 89.7 13.1 89.7 9 93.4 8.3 98.1L3.6 98.1C1.6 98.1 0 96.5 0 94.5L0 86.6 73.8 86.6ZM56.7 92.1C52.7 92.1 49.3 95.4 49.3 99.5 49.3 103.7 52.7 107 56.7 107 60.8 107 64.1 103.7 64.1 99.5 64.1 95.4 60.8 92.1 56.7 92.1ZM56.7 103.3C54.7 103.3 53 101.6 53 99.5 53 97.5 54.7 95.8 56.7 95.8 58.8 95.8 60.4 97.5 60.4 99.5 60.4 101.6 58.8 103.3 56.7 103.3ZM18 92.1C13.9 92.1 10.6 95.4 10.6 99.5 10.6 103.7 13.9 107 18 107 22.1 107 25.4 103.7 25.4 99.5 25.4 95.4 22.1 92.1 18 92.1ZM18 103.3C16 103.3 14.3 101.6 14.3 99.5 14.3 97.5 16 95.8 18 95.8 20.1 95.8 21.7 97.5 21.7 99.5 21.7 101.6 20.1 103.3 18 103.3Z" class="a"/><path d="M110 45.9C110 66.3 96.7 83.6 78.4 89.5L78.4 83C93.3 77.3 103.9 62.8 103.9 45.9 103.9 24 86.2 6.2 64.5 6.2 42.7 6.2 25 24 25 45.9 25 48.1 25.2 50.2 25.6 52.3L19.4 52.3C19.1 50.2 18.9 48.1 18.9 45.9 18.9 20.6 39.4 0 64.5 0 89.6 0 110 20.6 110 45.9Z" class="a"/><path d="M83 60.5C83.9 60.9 85.1 60.6 85.6 59.8L85.7 59.7C86.2 58.8 86 57.7 85.2 57L70.4 45.1C70.3 44 69.9 43 69.2 42.2L73.7 14.6C73.8 13.6 73.2 12.6 72.2 12.4L72.1 12.4C71.1 12.1 70.1 12.7 69.8 13.7L61.8 40.4C59.8 41.4 58.4 43.5 58.4 45.9 58.4 49.2 61.1 52 64.5 52 65.1 52 65.7 51.8 66.2 51.7M61.5 45.9C61.5 44.2 62.8 42.9 64.5 42.9 66.1 42.9 67.5 44.2 67.5 45.9 67.5 47.5 66.1 48.9 64.5 48.9 62.8 48.9 61.5 47.5 61.5 45.9Z" fill="rgb(255, 156, 0)"/></svg></i>
+						<h4>быстрая доставка в любую точку РФ</h4>
+					</div>
+				</div>
+        	</div>
+        </section>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__top_body">
+						<div class="footer__top_col">
+							<a class="footer__top_logo" href="/"><img src="images/logo.png" alt=""></a>
+							<h6>© «Антэк» 2010 - 2017 г.</h6>
+							<a class="footer__top_dev" target="_blank" href="http://markello.ru/"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="37"><path d="M2.5 2.5L34.5 2.5 34.5 34.5 2.5 34.5 2.5 2.5Z" style="fill:none;stroke-width:1px;stroke:rgb(227, 203, 178)"/><path d="M26 21.5L20.8 21.5 18.5 20.1 16.2 21.5 11 21.5 6.5 14.5 11.8 14.5 14.5 17.6 17 14.5 18.5 14.5 20 14.5 22.5 17.6 25.2 14.5 30.5 14.5 26 21.5ZM26 23.5L11 23.5 11 22.3 26 22.3 26 23.5Z" fill="rgb(255, 156, 0)"/></svg><span>Markello <small>Cоздание сайта</small></span></a>
+						</div>
+						<div class="footer__top_col footer__top_links _small">
+							<div class="footer__top_linkswrap">
+								<a href="#"><span>О компании</span></a>
+								<a href="#"><span>Услуги</span></a>
+								<a href="#"><span>Портфолио</span></a>
+								<a href="#"><span>Блог</span></a>
+								<a href="#"><span>Контакты</span></a>
+							</div>
+						</div>
+						<div class="footer__top_col2x footer__top_links">
+							<div class="footer__top_linkswrap">
+								<div>
+									<a href="#"><span>Коробки из картона</span></a>
+									<a href="#"><span>Упковочные коробки</span></a>
+									<a href="#"><span>Микрогофрокартон и гофрокоробка</span></a>
+									<a href="#"><span>переплетенный картон</span></a>
+								</div>
+								<div>
+									<a href="#"><span>Папки меню</span></a>
+									<a href="#"><span>БУмажные пакеты</span></a>
+									<a href="#"><span>POSM материалы</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bot _open_pop" data-name="thnx">
+        		<div class="container">
+        			<div class="footer__bot_wrap">
+        				<a href="https://www.google.com.ua/maps?source=tldso" target="_blank" class="footer__bot_link"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="18"><path d="M7 0C3.1 0 0 3.1 0 7 0 8 0.2 9 0.6 9.8 2.4 13.7 5.7 16.7 6.7 17.9 6.8 17.9 6.9 18 7 18 7.1 18 7.2 17.9 7.3 17.9 8.3 16.7 11.6 13.7 13.4 9.8 13.8 9 14 8 14 7 14 3.1 10.9 0 7 0ZM7 10.6C5 10.6 3.4 9 3.4 7 3.4 5 5 3.4 7 3.4 9 3.4 10.6 5 10.6 7 10.6 9 9 10.6 7 10.6Z" fill="rgb(227, 203, 178)"/></svg><span>г. Клин, улица Захватаева, 4</span></a>
+        				<a href="mailto:dobox@info.com" class="footer__bot_link"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path d="M18 11.7C18 12.1 17.9 12.5 17.7 12.8L12 6.2 17.6 1.1C17.9 1.5 18 1.9 18 2.3L18 11.7ZM9 7.4L16.8 0.3C16.5 0.1 16.1 0 15.8 0L2.3 0C1.9 0 1.5 0.1 1.2 0.3L9 7.4ZM11.2 7L9.4 8.6C9.3 8.7 9.1 8.8 9 8.8 8.9 8.8 8.7 8.7 8.6 8.6L6.8 7 1.1 13.6C1.4 13.9 1.8 14 2.3 14L15.8 14C16.2 14 16.6 13.9 16.9 13.6L11.2 7ZM0.4 1.1C0.1 1.5 0 1.9 0 2.3L0 11.7C0 12.1 0.1 12.5 0.3 12.8L6 6.2 0.4 1.1Z" fill="rgb(227, 203, 178)"/></svg><span>dobox@info.com</span></a>
+						<a href="tel:88005553535" class="footer__bot_phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M16 12.6C16 12.9 15.9 13.1 15.8 13.3L13.5 15.5C13.4 15.7 13.3 15.8 13.1 15.8 12.9 15.9 12.8 16 12.6 16 12.6 16 12.6 16 12.5 16 12.5 16 12.4 16 12.3 16 12.1 16 11.7 16 11.3 15.9 10.8 15.8 10.2 15.6 9.5 15.3 8.8 15.1 8 14.6 7.1 14.1 6.3 13.5 5.3 12.7 4.3 11.7 3.5 10.9 2.9 10.2 2.4 9.4 1.8 8.7 1.4 8.1 1.1 7.5 0.8 6.9 0.6 6.3 0.4 5.8 0.2 5.3 0.1 4.9 0.1 4.5 0 4.2 0 3.9 0 3.7 0 3.5 0 3.4 0 3.4 0 3.2 0.1 3.1 0.2 2.9 0.3 2.7 0.3 2.6 0.5 2.5L2.7 0.2C2.9 0.1 3.1 0 3.3 0 3.4 0 3.5 0 3.6 0.1 3.8 0.2 3.9 0.3 3.9 0.4L5.7 3.9C5.8 4.1 5.9 4.3 5.8 4.5 5.8 4.7 5.7 4.9 5.5 5L4.7 5.8C4.7 5.9 4.7 5.9 4.7 6 4.6 6 4.6 6.1 4.6 6.1 4.7 6.3 4.8 6.6 4.9 6.9 5.1 7.2 5.3 7.5 5.6 7.9 5.8 8.3 6.2 8.7 6.8 9.2 7.3 9.8 7.7 10.2 8.1 10.4 8.5 10.7 8.8 10.9 9.1 11.1 9.4 11.2 9.6 11.3 9.7 11.3L9.9 11.4C10 11.4 10 11.4 10 11.3 10.1 11.3 10.1 11.3 10.1 11.3L11.1 10.3C11.3 10.1 11.6 10 11.8 10 12 10 12.2 10.1 12.3 10.1L12.3 10.1 15.6 12.1C15.8 12.2 15.9 12.4 16 12.6Z" fill="rgb(227, 203, 178)"/></svg><span>8 800 555 35 35</span></a>
+        			</div>
+        		</div>
+        	</div>
+		</footer>
+       
+        <div class="overlay"></div>
+		<div class="popup _calc">
+			<h3 class="h1">отправить тз на расчет <div class="close_pop"><span>&times;</span></div></h3>
+			<hr>
+			<form action="/" class="popup__form">
+			<input type="hidden" name="form" value="отправить тз на расчет">
+				<input type="text" class="input" name="name" placeholder="Ваше имя">
+				<input type="text" class="input" name="phone" placeholder="Номер телефона">
+				<input type="email" class="input" name="mail" placeholder="E-mail адрес">
+				<input name="upload" type="file">
+				<textarea class="textarea" name="tz" placeholder="ТЕхническое задание"></textarea>
+				<div class="popup__form_txt">
+					<button type="submit" class="btn"><span>Запросить стоимость</span></button>
+					<div>
+						<h4>Минимальный заказ: <b>от 1 штуки</b></h4>
+						<h4>наш телефон: <b><a href="tel:88005553535"> 8 800 555 35 35</a></b></h4>
+					</div>
+				</div>
+			</form>
+		</div>
+<!--       попап окно "Спасибо" _thnx возьмите пожалуйста из главной страницы-->
+        <div class="popup _thnx">
+			<h3 class="h2"><span>Спасибо!</span> <div class="close_pop"><span>&times;</span></div></h3>
+		</div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="vendor/jquery-3.1.1.min"><\/script>')</script>
+        <script src="vendor/jquery.nicefileinput.min.js"></script>
+        <script src="vendor/jquery.validate.min.js"></script>
+        <script src="vendor/jquery.maskedinput.min.js"></script>
+        <script src="js/main.js"></script>
+		<script src="_trg.js"></script>
+    </body>
+</html>
