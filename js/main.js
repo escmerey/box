@@ -1,6 +1,7 @@
 $(document).ready(function() {
     //s_main slider
-	timerSlider = setTimeout;
+    $('.s_main__menu_item').removeClass('_current').eq(0).addClass('_current')
+    timerSlider = setTimeout;
     if ($('*').is('.s_main__slider')) {
         var sl_main = $('.s_main__slider').lightSlider({
             item: 1,
@@ -11,11 +12,11 @@ $(document).ready(function() {
             pause: 4000,
             onBeforeSlide: function(el, index) {
                 if (index == 2) {
-                	timerSlider = setTimeout(function () {
-			            sl_main.goToSlide(0);
-                	},4000);
-                }else{
-                	clearTimeout(timerSlider);
+                    timerSlider = setTimeout(function() {
+                        sl_main.goToSlide(0);
+                    }, 4000);
+                } else {
+                    clearTimeout(timerSlider);
                 };
                 $('.s_main__menu_item').removeClass('_current').eq(index).addClass('_current')
             }
