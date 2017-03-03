@@ -354,25 +354,25 @@ p{
 		}
 	}
 }
-progress[value]{
-	width: 250px;
-	height: 3px;
-	position: relative;
-	display: block;
-	color: blue; 
-	border: none;
-	-webkit-appearance: none;
-	appearance: none;
-	&::-moz-progress-bar{
-		background-color: transparent;
-	}
-	&::-webkit-progress-bar{
-		background-color: transparent;
-	}
-	&::-webkit-progress-value{
-		background-color: $o;
-	}
-}
+// progress{
+// 	width: 250px;
+// 	height: 3px;
+// 	position: relative;
+// 	display: block;
+// 	color: blue; 
+// 	border: none;
+// 	-webkit-appearance: none;
+// 	appearance: none;
+// 	&::-moz-progress-bar{
+// 		background-color: transparent;
+// 	}
+// 	&::-webkit-progress-bar{
+// 		background-color: transparent;
+// 	}
+// 	&::-webkit-progress-value{
+// 		background-color: $o;
+// 	}
+// }
 hr{
 	border: none;
 	height: 1px;
@@ -1060,6 +1060,11 @@ hr{
 						background-color: rgba($b,.15);
 					}
 				}
+				.progress{
+					width: 100%;
+					opacity: 1;
+					transition: 4s width linear;
+				}
 			}
 			h3{
 				color: #ffffff;
@@ -1074,8 +1079,14 @@ hr{
 				position: relative;
 				z-index: 2;
 			}
-			progress[value]{
-				width: 100%;
+			.progress{
+				opacity: 0;
+				width: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 3px;
+				background-color: $o;
 			}
 		}
 	}
@@ -1672,22 +1683,26 @@ hr{
 		@extend ._flex_fs_s;
 		width: calc(50% - 15px);
 		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+		background-color: #000;
+		color: #fff;
+		
 		&:hover{
-			border-color: $o;
 			.s_blog__item_img{
-				&:before{
-					opacity: 0.6;
-				}
+				opacity: .15;
+				transform: scale(1.02);
 			}
 		}
 		&_img{
-			max-width: 50px;
-			min-width: 50px;
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
-			margin: -1px;
-			position: relative;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: 0.2s all;
+			opacity: .25;
 			&:before{
 				content: '';
 				position: absolute;
@@ -1701,6 +1716,11 @@ hr{
 		}
 		&_txt{
 			padding: 30px;
+			position: relative;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
 		}
 		h2{
 			@include h1(1.25em);
@@ -1713,6 +1733,8 @@ hr{
 			font-size: 1em;
 			color: $b;
 			padding: 16px 60px;
+			color: #fff;
+			margin-top: auto;
 			display: inline-block;
 			border: 2px solid  $o;
 			text-transform: uppercase;
